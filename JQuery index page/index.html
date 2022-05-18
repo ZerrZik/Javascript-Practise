@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <section id="section1" class="section">
+        <!-- Pasislepiantis meniu su drop down meniu -->
+        <div class="navbar">
+            <ul class="meniuItems">
+                <li id="meniuMain"><a href="#">Pagrindinis</a>
+                    <ul id="main" class="dropdown">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+                <li id="aboutMeniu"><a href="#">Apie mus</a>
+                    <ul id="about" class="dropdown">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+                <li id="contactsMeniu"><a href="#">Kontaktai</a>
+                    <ul id="contacts" class="dropdown">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+                <li id="formMeniu"><a href="#section2" id="toSection2">Forma</a>
+                    <ul id="dataForm" class="dropdown">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>  
+            </ul>
+            <div class="button">
+                <i id="arrow" class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+        <!-- Paragraphai, kurie atsiranda scrollinant -->
+        <div class="container">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad at suscipit animi ex a corporis
+                    unde quia voluptatum? Dolor non ab reprehenderit? Sit odio officiis minus incidunt doloribus
+                    atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore, optio, quisquam
+                    alias tempora officia vel, obcaecati veritatis placeat necessitatibus quo. Ullam exercitationem nisi
+                    voluptas accusantium. Non dicta voluptas explicabo!</p>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad at suscipit animi ex a corporis
+                    unde quia voluptatum? Dolor non ab reprehenderit? Sit odio officiis minus incidunt doloribus
+                    atque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatibus quod eaque ab
+                    libero nemo vitae dolor dolorem debitis? Eveniet numquam reprehenderit eum consequuntur est tenetur
+                    veniam, accusamus deleniti voluptatibus!</p>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad at suscipit animi ex a corporis
+                    unde quia voluptatum? Dolor non ab reprehenderit? Sit odio officiis minus incidunt doloribus
+                    atque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor adipisci veniam
+                    doloribus, a labore impedit. Voluptate voluptatibus voluptatum temporibus, aperiam molestiae
+                    veritatis quos harum qui magnam. Eveniet, veniam cupiditate.</p>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad at suscipit animi ex a corporis
+                    unde quia voluptatum? Dolor non ab reprehenderit? Sit odio officiis minus incidunt doloribus
+                    atque?Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, cumque! Dicta alias corrupti
+                    velit, at illo eos iusto omnis ea minus enim ad et deleniti dignissimos quia possimus ullam aliquid?
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section id="section2" class="section">
+        <!-- forma -->
+        <h1>Duomenų įvedimo forma</h1>
+        <form id="form">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <input type="submit" value="Ivesti" id="submit">
+        </form>
+        <div class="buttonsContainer">
+            <!-- Duomenu listas -->
+            <ol id="list">
+
+            </ol>
+            <!-- Mygtukas valyti lista -->
+            <button id="clearList">Hide List</button>
+            <button id="showArray">Show List</button>
+            <!-- Mygtukas trinti duomenis -->
+            <button id="clearArray">Clear Data</button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
